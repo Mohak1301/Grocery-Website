@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color:rgb(0,128,55);
+}
+
+body {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: w;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: white;
+  color: white;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+ 
+}
+* {
+  box-sizing: border-box;
+}
+
+.topnav.form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 50%;
+  background: #f1f1f1;
+}
+
+.topnav.form.example button {
+  float: left;
+  width: 5%;
+  padding: 0;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+  margin: 0;
+}
+
+.topnav.form.example button:hover {
+  background: #0b7dda;
+}
+
+.topnav.form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body background="../Images/background for all.png">
+    <div class="topnav" style="padding-left: 50px;">
+        <p style="color:white;font-size: x-large;"><strong>Green Grocery</strong></p>
+        <form class="example">
+            <input type="text" placeholder="Search..">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+          <a href="About.html" style="color:whitesmoke; padding-right: 50px;">About</a>
+          <a href="Contact.html" style="color:whitesmoke; padding-right: 50px;">Contact</a> 
+          <a href="Category.html" style="color:whitesmoke; padding-right: 50px; ">Category</a>
+          <a href="../index.html" style="color:whitesmoke; padding-right: 50px;">Home</a>
+          
+    </div>
+<!--Cards-->
+<style>
+  *
+  {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 30px;
+  }
+  
+  .row {margin: 0 -5px;}
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+     
+    }
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
+  .green-button{
+            background-color: #04AA6D;
+            color: white;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 25px;
+            padding-right: 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            }
+  </style>
+  
+  <div class="row" style="padding-top: 30px; padding-bottom: 20px;">
+    <div class="column">
+      <div class="card">
+        <img src="../Personal Care/Deodorant.jpg" style="height: 120px; width: 120px;">
+        <p>Deodorant</p>
+        <p>Price: Rs.300</p>
+        <a href="" class="green-button">Buy now</a>
+      </div>
+    </div>
+        <div class="column">
+          <div class="card">
+            <img src="../Personal Care/Face cream.jpg" style="height: 120px; width: 120px;">
+            <p>Face Cream</p>
+            <p>Price: Rs.120</p>
+            <a href="" class="green-button">Buy now</a>
+          </div>
+    </div>
+    <div class="column">
+          <div class="card">
+            <img src="../Personal Care/Face wash.jpeg" style="height: 120px; width: 120px;">
+            <p>Fash wash</p>
+            <p>Price: Rs.250</p>
+            <a href="" class="green-button">Buy now</a>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <img src="../Personal Care/Hand Wash.jpg" style="height: 120px; width: 120px;">
+            <p>Handwash</p>
+            <p>Price: Rs.175</p>
+            <a href="" class="green-button">Buy now</a>
+           </div>
+        </div>
+  </div>
+
+    <div class="row" style="padding-top: 30px; padding-bottom: 20px;">
+    <div class="column">
+          <div class="card">
+            <img src="../Personal Care/Mouth wash.jpg" style="height: 120px; width: 120px;">
+            <p>Mouth Wash</p>
+            <p>Price: Rs.100</p>
+            <a href="" class="green-button">Buy now</a>
+          </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="../Personal Care/Shampoo.jpg" style="height: 120px; width: 120px;">
+        <p>Shampoo</p>
+        <p>Price: Rs.170</p>
+        <a href="" class="green-button">Buy now</a>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="../Personal Care/Soap.jpg" style="height: 120px; width: 120px;">
+        <p>Soap</p>
+        <p>Price: Rs.60/pc</p>
+        <a href="" class="green-button">Buy now</a>
+      </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <img src="../Personal Care/Toothpaste.jpg" style="height: 120px; width: 120px;">
+            <p>Tooth Paste</p>
+            <p>Price: Rs.60</p>
+            <a href="" class="green-button">Buy now</a>
+        </div>
+    </div>
+  </div>   
+    <!--Footer-->
+<footer style="padding-left: 50px; background-color: rgb(0,128,55); height: 145px;">
+  <p style="padding: 10px; color: white;">Author: Anirudh Sannidhi<br>
+  <img src="../Footer links/Gmail.png" style="height: 20px; width: 20px;"><a style="color: white;" href="#MailID">E-mail</a><br>
+  <img src="../Footer links/Facebook.jpg" style="height: 20px; width: 20px;"><a style="color: white;" href="#Facebook">Facebook</a><br>
+  <img src="../Footer links/Insta.png" style="height: 20px; width: 20px;"><a style="color: white;" href="#Instagram">Instagram</a>
+  <p style="text-align: center; color: white;">Created by Anirudh Sannidhi© All Rights Reserved 2022</p>
+</p>
+</footer>
+</body>
+</html>
