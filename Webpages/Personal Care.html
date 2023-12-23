@@ -2,7 +2,11 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="./index.js"></script>
 <style>
 * {box-sizing: border-box;}
 
@@ -92,19 +96,38 @@ body {
 }
 </style>
 </head>
-<body background="../Images/background for all.png">
-    <div class="topnav" style="padding-left: 50px;">
-        <p style="color:white;font-size: x-large;"><strong>Green Grocery</strong></p>
-        <form class="example">
-            <input type="text" placeholder="Search..">
-            <button type="submit"><i class="fa fa-search"></i></button>
-          </form>
-          <a href="About.html" style="color:whitesmoke; padding-right: 50px;">About</a>
-          <a href="Contact.html" style="color:whitesmoke; padding-right: 50px;">Contact</a> 
-          <a href="Category.html" style="color:whitesmoke; padding-right: 50px; ">Category</a>
-          <a href="../index.html" style="color:whitesmoke; padding-right: 50px;">Home</a>
-          
+<body style="background-color: #ffffff;">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-4">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item mx-3">
+            <a class="nav-link " aria-current="page" href="/Grocery-Website/index.html">Home</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link " href="Category.html">Category</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link " href="Contact.html">Contact</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="About.html">About</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="Cart.html">Cart</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
     </div>
+  </nav>
 <!--Cards-->
 <style>
   *
@@ -159,84 +182,112 @@ body {
   
   <div class="row" style="padding-top: 30px; padding-bottom: 20px;">
     <div class="column">
-      <div class="card">
+      <div class="card m-5">
         <img src="../Personal Care/Deodorant.jpg" style="height: 120px; width: 120px;">
         <p>Deodorant</p>
         <p>Price: Rs.300</p>
-        <a href="" class="green-button">Buy now</a>
+        <div class="d-flex justify-content-evenly">
+          <a href="" class="green-button">Buy now</a>
+          <button class="btn btn-primary add_to_cart">Add to Cart</button>
+        </div>
       </div>
     </div>
         <div class="column">
-          <div class="card">
+          <div class="card m-5">
             <img src="../Personal Care/Face cream.jpg" style="height: 120px; width: 120px;">
             <p>Face Cream</p>
             <p>Price: Rs.120</p>
-            <a href="" class="green-button">Buy now</a>
+            <div class="d-flex justify-content-evenly">
+          <a href="" class="green-button">Buy now</a>
+          <button class="btn btn-primary add_to_cart">Add to Cart</button>
+        </div>
           </div>
     </div>
     <div class="column">
-          <div class="card">
+          <div class="card m-5">
             <img src="../Personal Care/Face wash.jpeg" style="height: 120px; width: 120px;">
             <p>Fash wash</p>
             <p>Price: Rs.250</p>
-            <a href="" class="green-button">Buy now</a>
+            <div class="d-flex justify-content-evenly">
+          <a href="" class="green-button">Buy now</a>
+          <button class="btn btn-primary add_to_cart">Add to Cart</button>
+        </div>
           </div>
         </div>
         <div class="column">
-          <div class="card">
+          <div class="card m-5">
             <img src="../Personal Care/Hand Wash.jpg" style="height: 120px; width: 120px;">
             <p>Handwash</p>
             <p>Price: Rs.175</p>
-            <a href="" class="green-button">Buy now</a>
+            <div class="d-flex justify-content-evenly">
+          <a href="" class="green-button">Buy now</a>
+          <button class="btn btn-primary add_to_cart">Add to Cart</button>
+        </div>
            </div>
         </div>
   </div>
 
     <div class="row" style="padding-top: 30px; padding-bottom: 20px;">
     <div class="column">
-          <div class="card">
+          <div class="card m-5">
             <img src="../Personal Care/Mouth wash.jpg" style="height: 120px; width: 120px;">
             <p>Mouth Wash</p>
             <p>Price: Rs.100</p>
-            <a href="" class="green-button">Buy now</a>
+            <div class="d-flex justify-content-evenly">
+          <a href="" class="green-button">Buy now</a>
+          <button class="btn btn-primary add_to_cart">Add to Cart</button>
+        </div>
           </div>
     </div>
 
     <div class="column">
-      <div class="card">
+      <div class="card m-5">
         <img src="../Personal Care/Shampoo.jpg" style="height: 120px; width: 120px;">
         <p>Shampoo</p>
         <p>Price: Rs.170</p>
-        <a href="" class="green-button">Buy now</a>
+        <div class="d-flex justify-content-evenly">
+          <a href="" class="green-button">Buy now</a>
+          <button class="btn btn-primary add_to_cart">Add to Cart</button>
+        </div>
       </div>
     </div>
 
     <div class="column">
-      <div class="card">
+      <div class="card m-5">
         <img src="../Personal Care/Soap.jpg" style="height: 120px; width: 120px;">
         <p>Soap</p>
         <p>Price: Rs.60/pc</p>
-        <a href="" class="green-button">Buy now</a>
+        <div class="d-flex justify-content-evenly">
+          <a href="" class="green-button">Buy now</a>
+          <button class="btn btn-primary add_to_cart">Add to Cart</button>
+        </div>
       </div>
     </div>
 
     <div class="column">
-        <div class="card">
+        <div class="card m-5">
             <img src="../Personal Care/Toothpaste.jpg" style="height: 120px; width: 120px;">
             <p>Tooth Paste</p>
             <p>Price: Rs.60</p>
-            <a href="" class="green-button">Buy now</a>
+            <div class="d-flex justify-content-evenly">
+          <a href="" class="green-button">Buy now</a>
+          <button class="btn btn-primary add_to_cart">Add to Cart</button>
+        </div>
         </div>
     </div>
   </div>   
-    <!--Footer-->
-<footer style="padding-left: 50px; background-color: rgb(0,128,55); height: 145px;">
-  <p style="padding: 10px; color: white;">Author: Anirudh Sannidhi<br>
-  <img src="../Footer links/Gmail.png" style="height: 20px; width: 20px;"><a style="color: white;" href="#MailID">E-mail</a><br>
-  <img src="../Footer links/Facebook.jpg" style="height: 20px; width: 20px;"><a style="color: white;" href="#Facebook">Facebook</a><br>
-  <img src="../Footer links/Insta.png" style="height: 20px; width: 20px;"><a style="color: white;" href="#Instagram">Instagram</a>
-  <p style="text-align: center; color: white;">Created by Anirudh Sannidhi© All Rights Reserved 2022</p>
-</p>
-</footer>
+  
+  <div class="e_grocery_footer"></div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="../footer.js"></script>
+    <style>
+  @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+      *{
+        font-family: 'Spartan', sans-serif;
+  
+      }
+    </style>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"></script>
 </body>
 </html>
